@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="review">
+	<!-- insert, delete, update의 결과 타입은 무조건 resultType=”int” 이므로 
+	프로그래머가 써주지 않아도 이미 resultType=”int”가 있는 것으로 봄. -->
+	<insert id="create" parameterType="reviewVO">
+		insert into review values (#{nickname}, #{review_content}, #{review_date})
+	</insert>
+	
+	<delete id="del"  parameterType="int">
+		delete from review where review_no = #{review_no}
+	</delete>
+	
+	<update id="up"  parameterType="reviewVO">
+		update review set review_date = #{review_content} where nickname = #{nickname}
+	</update>
+	
+	<select id="one" parameterType="String" resultType="reviewVO">
+		select * from review where review_no = #{review_no}
+	</select>
+	
+	<select id="all" parameterType="reviewVO" resultType="reviewVO">
+		select * from review
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
