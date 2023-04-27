@@ -12,11 +12,27 @@ public class FestaController {
 
 	@Autowired
 	FestaDAO dao; // 전역변수(글로벌 변수)
+	
+	
+	@RequestMapping("/home")
+	public void landing(Model model) {
+		
+		System.out.println("야호 ");
+		// Model은 컨트롤러의 list를 views/list.jsp까지만 전달할 수 있는 객체
+		List<FestaVO> list = dao.list();
+		model.addAttribute("list", list);
+		System.out.println("list : "+ list);
+	}
+	
+	
+ 
 
 	@RequestMapping("insert")
 	public void insert(FestaVO bag) {
 		System.out.println("insert요청됨.");
 		System.out.println(bag);
+		System.out.println(dao);
+		
 		dao.insert(bag);
 	}
 

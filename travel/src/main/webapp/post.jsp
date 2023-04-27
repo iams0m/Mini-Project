@@ -10,8 +10,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <title>Travel Lover</title>
-<script type="text/javascript">
-</script>
+<script type="text/javascript" src="resources/js/jquery-3.6.4.js"></script>
 <link rel="icon" type="image/x-icon" href="resources/assets/favicon.ico" />
 <!-- Font Awesome icons (free version)-->
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
@@ -30,7 +29,7 @@
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
 		<div class="container px-4 px-lg-5">
-			<a class="navbar-brand" href="index.jsp">Travel Lover</a>
+			<a class="navbar-brand" href="home">Travel Lover</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false"
@@ -184,5 +183,6 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
+	
 </body>
 </html>

@@ -20,7 +20,7 @@
 	</select>
 	
 	<select id="all" parameterType="festaVO" resultType="festaVO">
-		select * from festa
+		select * from festa limit 5;
 	</select>
 	
 </mapper>

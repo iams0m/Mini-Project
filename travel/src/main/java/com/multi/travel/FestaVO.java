@@ -1,12 +1,21 @@
 package com.multi.travel;
 
 public class FestaVO {
+	private Integer festa_no;
 	private String festa_img;
 	private String festa_title;
 	private String brief_contents;
 	private String festa_date;
 	private String festa_area;
 	private String festa_detail;
+
+	public Integer getFesta_no() {
+		return festa_no;
+	}
+
+	public void setFesta_no(Integer festa_no) {
+		this.festa_no = festa_no;
+	}
 
 	public String getFesta_img() {
 		return festa_img;
@@ -58,8 +67,9 @@ public class FestaVO {
 
 	@Override
 	public String toString() {
-		return "FestaVO [festa_img=" + festa_img + ", festa_title=" + festa_title + ", brief_contents=" + brief_contents
-				+ ", festa_date=" + festa_date + ", festa_area=" + festa_area + ", festa_detail=" + festa_detail + "]";
+		return "FestaVO [festa_no=" + festa_no + ", festa_img=" + festa_img + ", festa_title=" + festa_title
+				+ ", brief_contents=" + brief_contents + ", festa_date=" + festa_date + ", festa_area=" + festa_area
+				+ ", festa_detail=" + festa_detail + "]";
 	}
 
 }
